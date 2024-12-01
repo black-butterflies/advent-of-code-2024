@@ -10,7 +10,6 @@ def solution(filename: str) -> int:
     return  sum(x * right_counter[x] for x in left)
     
 
-
-print(solution('day01_input_test'))
-print(solution('day01_input'))
-    
+if __name__ == '__main__':
+    print(solution('day01_input_test'))
+    print(solution('day01_input'))
