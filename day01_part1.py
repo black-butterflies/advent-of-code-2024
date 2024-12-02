@@ -16,11 +16,11 @@ def create_lists(fp: TextIO) -> tuple[list]:
 
 
 def solution(filename: str) -> int:
-    with open(filename, 'r') as f:
+    with open(filename, "r") as f:
         list1, list2 = create_lists(f)
     return sum(abs(n1 - n2) for n1, n2 in zip(list1, list2))
 
 
-if __name__ == '__main__':
-    print(solution('day01_input_test'))
-    print(solution('day01_input'))
+if __name__ == "__main__":
+    print(solution("day01_input_test"))
+    print(solution("day01_input"))

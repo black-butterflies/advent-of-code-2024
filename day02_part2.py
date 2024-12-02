@@ -27,9 +27,9 @@ def is_line_safe(line: str) -> bool:
 
 
 def solution(filename: str) -> int:
-    with open(filename, 'r') as f:
+    with open(filename, "r") as f:
         return sum(int(is_line_safe(line)) for line in f)
 
 
-print(solution('day02_input_test'))
-print(solution('day02_input'))
+print(solution("day02_input_test"))
+print(solution("day02_input"))
