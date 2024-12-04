@@ -18,5 +18,6 @@ def solution(filename: str) -> int:
         return sum(multiply_line(line) for line in f)
 
 
-print(solution("input_test"))
-print(solution("input"))
+if __name__ == "__main__":
+    print(solution("input_test"))
+    print(solution("input"))
